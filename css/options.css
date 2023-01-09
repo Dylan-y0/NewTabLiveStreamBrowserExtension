@@ -1,0 +1,115 @@
+
+body {
+    width:600px;
+    margin:auto;
+}
+header {
+    border-bottom:darkgray solid;
+    margin-bottom:0;
+
+    display: flex;
+}
+header > h1 {
+   justify-content: left;
+}
+header > span {
+   justify-content: right;
+}
+
+.tabs {
+    display: inline-flex;
+}
+.tabs > .tab {
+    
+    height:auto;
+    width:50px;
+}
+
+
+table {
+    width:100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+#streamsTable  tr:hover:not(:first-of-type) {
+    background-color: #ddd;
+}
+td.title {
+
+}
+td.link {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+td.btnEdit {
+
+}
+.settingsContainer {
+    position: relative;
+}
+.overlayBackground {
+    position: relative;
+}
+.overlayBackground {
+    /* display: none; */
+
+    z-index:20;
+
+
+  
+
+    position: fixed; /* Sit on top of the page content */
+  
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    
+    display: flex;
+    justify-content: center;
+
+}
+.overlayBackground > .overlayContent {
+    width: 400px;
+    height: 250px;
+    border:black solid;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.overlayBackground > .overlayContent > form {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+.overlayContent > form > div  {
+    width: 100%;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+form > div > button {
+    width:100%;
+}
+
+
+#newStreamOverlay {
+ display: none;
+}
+
+
+table > tbody > tr {
+    pointer-events: none;
+}

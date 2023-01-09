@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "New Tab livestream thingy :)",
+  "version": "3.1",
+  "description": "A plain text description",
+  "permissions": [
+    "topSites",
+    "storage",
+    "chrome://favicon/"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "newTab.html"
+  },
+  "options_page": "options.html"
+}

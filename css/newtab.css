@@ -1,0 +1,75 @@
+body {
+    overflow:hidden
+}
+.Container {
+    height:100vh;
+    width:100vw;
+}
+.SitesContainer{
+    /*border: black solid; */
+    position:absolute;
+    top:15%;
+    left:5%;
+    width:fit-content;
+}
+.TopSitesFlex {
+    display: flex;
+    gap:25px;
+
+}
+.TopSitesFlex > .Site {
+    height:130px;
+    width:130px;
+    border-radius: 10%;
+   background-color:rgb(56, 56, 56);
+    color:white;
+    opacity: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+ 
+}
+.TopSitesFlex > .Site:hover {
+    opacity: 100%;
+}
+.Site > img {
+    opacity: 100%;
+}
+.Site > span {
+    display:block;
+    max-width: 15ch;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.ExtraInfoContainer {
+    position: absolute;
+    bottom:10%;
+    left:5%;
+
+}
+.extraInfo > a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+#player {
+    z-index: -10;
+    pointer-events: none;
+    position: fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width: 100vw;
+
+/*     z-index: -10;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    bottom:0; */
+}

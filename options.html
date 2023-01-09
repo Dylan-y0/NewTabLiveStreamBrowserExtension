@@ -1,0 +1,111 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <header>
+        <h1>New tab thing settings?</h1>
+    </header>
+    <div class="settingsContainer">
+        <div class="tabsContainer">
+            <div class="tabs">
+                <div class="tab">
+                    1
+                </div>
+                <div class="tab">
+                    1
+                </div>
+                <div class="tab">
+                    1
+                </div>
+            </div>
+        </div>
+        <div class="streamsTableContainer">
+            <table  style="width:100%" id="streamsTable">
+                <colgroup>
+                    <col style="width:auto">
+                    <col style="width:auto; word-wrap: normal;">
+                    <col style="width:auto">
+                    <col style="width:auto">
+              
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>
+                            id
+                        </th>
+                        <th>
+                            name
+                        </th>
+                        <th>
+                            type
+                        </th>
+                        <th>
+                            video ID
+                        </th>
+                        <th>
+                            <a id="btnNewEntry">+</a>
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+                <template id="rowTemplate">
+                    <tr>
+                        <td>
+                         
+                        </td>
+                        <td>
+                         
+                        </td>
+                    </tr>
+                </template>
+            </table>
+        </div>
+       
+
+        </div>
+        
+        <div id="newStreamOverlay">
+            <div class="overlayBackground">
+                <div class="overlayContent">
+                    <form id="frmNewStream">
+                        <div>
+                            <label for="id">id</label>
+                            <input type="text" id="id" disabled>                            
+                        </div>
+
+                        <div>
+                            <label for="name">name</label>
+                            <input type="text" id="name">                            
+                        </div>
+                        <div>
+                            <label for="type">source type</label>
+                            <input type="text" id="sourceType" >                            
+                        </div>
+                        <div>
+                            <label for="ytID">Youtube ID</label>
+                            <input type="text" id="ytID">                            
+                        </div>
+                        <div>
+                            <button>Add/Edit</button>
+                        </div>
+                    </form>
+                    <button id="deleteEntry" style="width:100%; background-color: red;">DELETE</button>
+                    <div style="flex-grow: 1;"></div>
+                    <button id="closeOverlay" style="width:100%;">Close</button>
+                </div>
+
+                
+            </div>
+        </div>
+        
+   
+</body>
+
+</html>
